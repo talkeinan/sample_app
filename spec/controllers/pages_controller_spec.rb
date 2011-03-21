@@ -1,8 +1,8 @@
 require 'spec_helper'
-integrate_views
 
 describe PagesController do
-
+  render_views
+  
   describe "GET 'home'" do
     it "should be successful" do
       get 'home'
@@ -14,15 +14,8 @@ describe PagesController do
       response.should have_selector("title",
                         :content => "Ruby on Rails Tutorial Sample App | Home")
     end
-     
-    
-    #it "should have the right title" do
-    #  get 'home'
-    #  response.should have_selector("title",
-    #    :content => "Ruby on Rails Tutorial Sample App | Home")
-    #end
   end
-   
+ 
   describe "GET 'contact'" do
     it "should be successful" do
       get 'contact'
@@ -35,7 +28,7 @@ describe PagesController do
         :content => "Ruby on Rails Tutorial Sample App | Contact")
       end
   end
-  
+ 
   describe "Get 'about'" do
     it "Should be successful" do
       get 'about'
