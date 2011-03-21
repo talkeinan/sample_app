@@ -37,7 +37,7 @@ describe PagesController do
     
     it "Should have the right title" do
       get 'about'
-      response.should have_selector("title", 
+      response.should have_selector ("title", 
         :content => "Ruby on Rails Tutorial Sample App | About")
       end
   end
