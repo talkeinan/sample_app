@@ -7,7 +7,7 @@ require 'spec_helper'
     # setting variable that are used in many of the tests
      @base_title = "Ruby on Rails Tutorial Sample App |"
   end
-   
+    
   describe "GET 'home'" do
     it "should be successful" do
       get 'home'
@@ -20,7 +20,7 @@ require 'spec_helper'
                                     :content => @base_title + " Home")
     end
   end
-  
+   
   describe "GET 'contact'" do
     it "should be successful" do
       get 'contact'
